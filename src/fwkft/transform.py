@@ -7,7 +7,7 @@ and Fast Walsh–Kaczmarz Fourier Transform (FWKFT).
 
 Author
 ------
-Anteneh Tilahun
+Anteneh Tilahun Adimasu
 
 License
 -------

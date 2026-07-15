@@ -1,0 +1,32 @@
+"""
+Tests for the Walsh–Kaczmarz transform.
+"""
+
+import numpy as np
+
+from fwkft import fwkft
+
+
+def test_output_size():
+
+    x = np.random.randn(32)
+
+    y = fwkft(x)
+
+    assert len(y) == len(x)
+
+
+def test_linearity():
+
+    x = np.random.randn(16)
+
+    y = np.random.randn(16)
+
+    a = 3.5
+    b = -1.2
+
+    lhs = fwkft(a * x + b * y)
+
+    rhs = a * fwkft(x) + b * fwkft(y)
+
+    assert np.allclose(lhs, rhs, atol=1e-12)

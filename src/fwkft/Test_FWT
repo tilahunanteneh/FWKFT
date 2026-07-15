@@ -1,0 +1,40 @@
+"""
+Tests for the Fast Walsh–Hadamard Transform.
+"""
+
+import numpy as np
+
+from fwkft import fwht, ifwht
+
+
+def test_fwht_inverse():
+
+    x = np.random.randn(32)
+
+    y = fwht(x)
+
+    z = ifwht(y)
+
+    assert np.allclose(x, z, atol=1e-12)
+
+
+def test_fwht_energy():
+
+    x = np.random.randn(64)
+
+    y = fwht(x)
+
+    assert np.isclose(
+        np.linalg.norm(x),
+        np.linalg.norm(y),
+        atol=1e-12,
+    )
+
+
+def test_fwht_zero():
+
+    x = np.zeros(16)
+
+    y = fwht(x)
+
+    assert np.allclose(y, 0)

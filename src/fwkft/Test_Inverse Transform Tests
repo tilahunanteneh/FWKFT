@@ -1,0 +1,22 @@
+"""
+Inverse transform tests.
+"""
+
+import numpy as np
+
+from fwkft import fwkft, ifwkft
+
+
+def test_inverse():
+
+    x = np.random.randn(64)
+
+    y = fwkft(x)
+
+    z = ifwkft(y)
+
+    assert np.allclose(
+        x,
+        z,
+        atol=1e-12,
+    )

@@ -8,7 +8,7 @@ The implementation is based on the Rademacher functions.
 
 Author
 ------
-Anteneh Tilahun
+Anteneh Tilahun Adimasu
 
 License
 -------

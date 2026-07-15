@@ -1,0 +1,92 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fwkft"
+version = "0.1.0"
+description = "Fast Walsh–Kaczmarz Fourier Transform (FWKFT) for scientific computing and signal processing."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+
+authors = [
+    { name = "Anteneh Tilahun", email = "your.email@example.com" }
+]
+
+maintainers = [
+    { name = "Anteneh Tilahun", email = "your.email@example.com" }
+]
+
+keywords = [
+    "Walsh",
+    "Walsh-Kaczmarz",
+    "Fourier",
+    "FWKFT",
+    "FWHT",
+    "Fast Transform",
+    "Signal Processing",
+    "Harmonic Analysis",
+    "Scientific Computing"
+]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Scientific/Engineering :: Information Analysis"
+]
+
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.11",
+    "matplotlib>=3.7"
+]
+
+[project.optional-dependencies]
+
+dev = [
+    "pytest>=7.4",
+    "pytest-cov",
+    "black",
+    "ruff",
+    "mypy"
+]
+
+docs = [
+    "sphinx",
+    "furo",
+    "myst-parser"
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/fwkft"
+Documentation = "https://github.com/yourusername/fwkft"
+Repository = "https://github.com/yourusername/fwkft"
+Issues = "https://github.com/yourusername/fwkft/issues"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["fwkft*"]
+
+[tool.black]
+line-length = 88
+target-version = ["py39"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+
+[tool.ruff]
+line-length = 88

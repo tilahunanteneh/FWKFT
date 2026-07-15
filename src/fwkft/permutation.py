@@ -10,7 +10,7 @@ corresponding permutation of indices).
 
 Author
 ------
-Anteneh Tilahun
+Anteneh Tilahun Adimasu
 
 License
 -------

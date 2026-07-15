@@ -11,11 +11,11 @@ requires-python = ">=3.9"
 license = { text = "MIT" }
 
 authors = [
-    { name = "Anteneh Tilahun", email = "your.email@example.com" }
+    { name = "Anteneh Tilahun Adimasu", email = "mariyamawitanteneh@gmail.com" }
 ]
 
 maintainers = [
-    { name = "Anteneh Tilahun", email = "your.email@example.com" }
+    { name = "Anteneh Tilahun Adimasu", email = "mariyamawitanteneh@gmail.com" }
 ]
 
 keywords = [
@@ -68,10 +68,10 @@ docs = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/fwkft"
-Documentation = "https://github.com/yourusername/fwkft"
-Repository = "https://github.com/yourusername/fwkft"
-Issues = "https://github.com/yourusername/fwkft/issues"
+Homepage = "https://github.com/tilahunanteneh/fwkft"
+Documentation = "https://github.com/tilahunanteneh/fwkft"
+Repository = "https://github.com/tilahunanteneh/fwkft"
+Issues = "https://github.com/tilahunanteneh/fwkft/issues"
 
 [tool.setuptools]
 include-package-data = true

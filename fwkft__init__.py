@@ -6,7 +6,7 @@ A Python library implementing the Fast Walsh–Kaczmarz Fourier Transform
 (FWKFT), Fast Walsh–Hadamard Transform (FWHT), and related utilities.
 
 Author:
-    Anteneh Tilahun
+    Anteneh Tilahun Adimasu
 
 License:
     MIT
